@@ -1,0 +1,6 @@
+.App {
+	background-image: radial-gradient(farthest-corner at 20px 20px, #42AAf4 0%, #0A2963 100%);
+  text-align: center;
+  margin: auto;
+  box-sizing: border-box;
+}
