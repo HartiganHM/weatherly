@@ -1,0 +1,41 @@
+.CurrentWeather {
+	color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid ghostwhite;
+  padding: 20px;
+  margin: auto;
+}
+
+.current-temp {
+	font-size: 60px;
+}
+
+.condition {
+	font-size: 14px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+.hi-lo {
+	align-items: center;
+	display: flex;
+}
+
+.spacer {
+	margin: 0 20px;
+}
+
+.weather-box {
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.weather-icon {
+	width: 150px;
+}
