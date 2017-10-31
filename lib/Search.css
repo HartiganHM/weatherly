@@ -1,6 +1,15 @@
-.Search {
-  border-top: 2px solid ghostwhite;
-  padding: 20px;
-  margin-top: 50px;
-  color: lightseagreen;
+input, button {
+  border: 2px solid ghostwhite;
+  font-size: 25px;
+  margin: auto;
+  height: 80px;
+  width: 800px;
+}
+
+input {
+	margin-right: 5px;
+}
+
+button {
+	width: 100px;
 }
