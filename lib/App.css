@@ -1,6 +1,6 @@
-.App {  
+.App {
+	background-image: radial-gradient(farthest-corner at 20px 20px, #42AAf4 0%, #0A2963 100%);
   text-align: center;
   margin: auto;
-	width: 1000px;
-	/*Not sure we need this fixed width since we want the sight to be responsive*/
+  box-sizing: border-box;
 }
