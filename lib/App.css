@@ -1,0 +1,6 @@
+.App {  
+  text-align: center;
+  margin: auto;
+	width: 1000px;
+	/*Not sure we need this fixed width since we want the sight to be responsive*/
+}
