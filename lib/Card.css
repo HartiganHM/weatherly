@@ -1,0 +1,16 @@
+.CurrentWeather {
+	color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid ghostwhite;
+  padding: 20px;
+  margin: auto;
+}
+
+.card {
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+}
