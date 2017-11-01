@@ -1,6 +1,7 @@
 .card {
 	flex: 1;
 	border: 1px solid ghostwhite;
+	margin: 10px;
 }
 
 .time,
