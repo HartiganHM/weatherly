@@ -5,6 +5,22 @@
 
 .time,
 .condition,
-.temp {
+.temp,
+.day {
 	padding: 20px;
+}
+
+.highLow,
+.spacer {
+	display: inline-flex;
+}
+
+.day-none,
+.highLow-none {
+	display: none;
+}
+
+.spacer {
+	margin: auto 20px;
+	font-size: 25px;
 }
