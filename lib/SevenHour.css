@@ -6,3 +6,14 @@
   padding: 20px;
   margin: auto;
 }
+
+.time,
+.condition,
+.temp {
+	padding: 35px;
+}
+
+.spacer {
+	margin: auto 20px;
+	font-size: 25px;
+}
