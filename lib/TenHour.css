@@ -1,0 +1,19 @@
+.TenHour {
+	color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid ghostwhite;
+  padding: 10px;
+  margin: auto;
+}
+
+.time,
+.condition,
+.temp {
+	padding: 35px;
+}
+
+.spacer {
+	margin: auto 20px;
+	font-size: 25px;
+}
