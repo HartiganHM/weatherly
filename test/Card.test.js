@@ -10,36 +10,34 @@ const mockData = {
   low: '−459.67°F'
 }
 
-describe('Card', () => {
-  it('should have a className card', () => {
-    const card = shallow(<Card />);
-      expect( card.find('.card').length ).toEqual(1);
+describe('Card Tests', () => {
+  it('Should have a className card', () => {
+    const card = shallow( <Card /> );
+    expect( card.find('.card').length ).toEqual(1);
   })
 
-  it('should have a configurable time div', () => {
-    const card = shallow(<Card time={mockData.time} />);
+  it('Should have a configurable time div', () => {
+    const card = shallow( <Card time={mockData.time} />);
     expect( card.find('.time').length ).toEqual(1);
     expect('5:00 PM').toEqual(mockData.time);
   })
 
-  it('should have a configurable condition div', () => {
-    const card = shallow(
-      <Card condition={mockData.condition} />);
-      expect( card.find('.condition').length ).toEqual(1);
-      expect( card.find('.condition').text() ).toEqual('Sunny');
+  it('Should have a configurable condition div', () => {
+    const card = shallow( <Card condition={mockData.condition} />);
+    expect( card.find('.condition').length ).toEqual(1);
+    expect( card.find('.condition').text() ).toEqual('Sunny');
   })
 
-  it('should have a configurable temp div', () => {
-    const card = shallow(
-      <Card temp={mockData.temp} />);
-      expect( card.find('.temp').length ).toEqual(1);
-      expect('72°F').toEqual(mockData.temp);
+  it('Should have a configurable temp div', () => {
+    const card = shallow( <Card temp={mockData.temp} />);
+    expect( card.find('.temp').length ).toEqual(1);
+    expect('72°F').toEqual(mockData.temp);
   })
 
-  it('should have a configurable temp div with high and low', () => {
-    const card = shallow(
-      <Card high={mockData.high} low={mockData.low} />);
-      expect("212°F").toEqual(mockData.high);
-      expect("−459.67°F").toEqual(mockData.low);
+  it('Should have a configurable temp div with high and low', () => {
+    const card = shallow( <Card high={mockData.high} low={mockData.low} />);
+    expect( card.find('.temp').length ).toEqual(1);      
+    expect("212°F").toEqual(mockData.high);
+    expect("−459.67°F").toEqual(mockData.low);
   })
 })
