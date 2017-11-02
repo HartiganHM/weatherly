@@ -5,7 +5,9 @@ import Card from '../lib/Card';
 const mockData = {
   time: '5:00 PM',
   condition: 'Sunny',
-  temp: '72°F'
+  temp: '72°F',
+  high: '212°F',
+  low: '−459.67°F'
 }
 
 describe('Card', () => {
@@ -22,15 +24,22 @@ describe('Card', () => {
 
   it('should have a configurable condition div', () => {
     const card = shallow(
-      <Card time={mockData.condition} />);
+      <Card condition={mockData.condition} />);
       expect( card.find('.condition').length ).toEqual(1);
       expect( card.find('.condition').text() ).toEqual('Sunny');
   })
 
   it('should have a configurable temp div', () => {
     const card = shallow(
-      <Card time={mockData.temp} />);
+      <Card temp={mockData.temp} />);
       expect( card.find('.temp').length ).toEqual(1);
       expect('72°F').toEqual(mockData.temp);
+  })
+
+  it('should have a configurable temp div with high and low', () => {
+    const card = shallow(
+      <Card high={mockData.high} low={mockData.low} />);
+      expect("212°F").toEqual(mockData.high);
+      expect("−459.67°F").toEqual(mockData.low);
   })
 })
