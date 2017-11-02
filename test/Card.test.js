@@ -5,8 +5,7 @@ import Card from '../lib/Card';
 const mockData = {
   time: '5:00 PM',
   condition: 'Sunny',
-  temp: '72°F',
-  day: 'Friday'
+  temp: '72°F'
 }
 
 describe('Card', () => {
@@ -16,10 +15,9 @@ describe('Card', () => {
   })
 
   it('should have a configurable time div', () => {
-    const card = shallow(
-      <Card time={mockData.time} />);
-      expect( card.find('.time').length ).toEqual(1);
-      expect( card.find('.time').text() ).toEqual('5:00 PM');
+    const card = shallow(<Card time={mockData.time} />);
+    expect( card.find('.time').length ).toEqual(1);
+    expect('5:00 PM').toEqual(mockData.time);
   })
 
   it('should have a configurable condition div', () => {
@@ -33,13 +31,6 @@ describe('Card', () => {
     const card = shallow(
       <Card time={mockData.temp} />);
       expect( card.find('.temp').length ).toEqual(1);
-      expect( card.find('.temp').text() ).toEqual('72°F');
-  })
-
-  it('should have a configurable day div', () => {
-    const card = shallow(
-      <Card time={mockData.day} />);
-      expect( card.find('.day').length ).toEqual(1);
-      expect( card.find('.day').text() ).toEqual('Friday');
+      expect('72°F').toEqual(mockData.temp);
   })
 })
