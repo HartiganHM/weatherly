@@ -5,8 +5,8 @@ import App from '../lib/App';
 
 describe('App', () => {
   it('should shallow', () => {
-    // const component = shallow(<App />);
+    const component = mount(<App />);
 
-    // console.log( component.find('input[type="text"]').debug() );
+    console.log( component.find('div[className="App"]').debug() );
   })
 })

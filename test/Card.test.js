@@ -32,11 +32,11 @@ describe('Card', () => {
   });
 
   it('should render passed in index', () => {
-    const card = shallow(<Card index={1}/>);
+    const card = shallow(<Card index={1} />);
 
-    // find the index
+    console.log(card.find('.index').text())
 
-    // expect index to equal 1
-  });
+    expect( parseInt(card.find('.index').text()) ).toEqual( 1 )
+})
 
 })
