@@ -2,41 +2,44 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Card from '../lib/Card';
 
+const mockData = {
+  time: '5:00 PM',
+  condition: 'Sunny',
+  temp: '72°F',
+  day: 'Friday'
+}
 
 describe('Card', () => {
-  it('should have a default state of showing a question', () => {
+  it('should have a className card', () => {
     const card = shallow(<Card />);
-
-    expect( card.state('showQuestion') ).toEqual(true);
+      expect( card.find('.card').length ).toEqual(1);
   })
 
-  it('should toggle state when clicked', () => {
-    const card = shallow(<Card />);
-
-    expect( card.state('showQuestion') ).toEqual(true);
-    expect( card.find('.answer').length ).toEqual(0);
-
-    card.simulate('click');
-
-    expect( card.state('showQuestion') ).toEqual(false);
-    expect( card.find('.answer').length ).toEqual(1);
-
+  it('should have a configurable time div', () => {
+    const card = shallow(
+      <Card time={mockData.time} />);
+      expect( card.find('.time').length ).toEqual(1);
+      expect( card.find('.time').text() ).toEqual('5:00 PM');
   })
 
-  it('should render passed in question and answer', () => {
-    const card = shallow(<Card question="What is the capitol of Kentucky?" />);
-    const questionText = card.find('.question').text();
+  it('should have a configurable condition div', () => {
+    const card = shallow(
+      <Card time={mockData.condition} />);
+      expect( card.find('.condition').length ).toEqual(1);
+      expect( card.find('.condition').text() ).toEqual('Sunny');
+  })
 
-    // use props to replace question in the following line
-    expect(questionText).toEqual('Question: ' + card.instance().props.question)
-  });
+  it('should have a configurable temp div', () => {
+    const card = shallow(
+      <Card time={mockData.temp} />);
+      expect( card.find('.temp').length ).toEqual(1);
+      expect( card.find('.temp').text() ).toEqual('72°F');
+  })
 
-  it('should render passed in index', () => {
-    const card = shallow(<Card index={1}/>);
-
-    // find the index
-
-    // expect index to equal 1
-  });
-
+  it('should have a configurable day div', () => {
+    const card = shallow(
+      <Card time={mockData.day} />);
+      expect( card.find('.day').length ).toEqual(1);
+      expect( card.find('.day').text() ).toEqual('Friday');
+  })
 })
