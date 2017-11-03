@@ -47,26 +47,12 @@ describe('TenHour', () => {
         expect( tenHour.find('.TenHour').length ).toEqual(1);
     })
 
-    it('Should take in sevenDayData with a starting length of 10', () => {
-        expect(mockSevenDayData.data.length).toEqual(10);
+    it('Should take in tenHourData with a starting length of 10', () => {
+        expect(mockTenHourData.length).toEqual(36);
     })
 
-    it('sevenDayData should get reassigned to cleanData and ends with a length of 7', () => {
-        let cleanData = mockSevenDayData.data.slice(0, 7);
-        expect(cleanData.length).toEqual(7);
+    it('tenHourData should get reassigned to cleanData and ends with a length of 10', () => {
+        let cleanData = mockTenHourData.slice(0, 10);
+        expect(cleanData.length).toEqual(10);
     })
-
-    it('cleanData should map over sevenDayData', () => {
-        let cleanData = mockSevenDayData.data.slice(0, 7);
-        cleanData.map( (obj) => {
-            return (
-                <Card title={obj.day}
-                      icon={obj.icon}
-                      high={obj.high}
-                      low={obj.low}
-                />
-        )}  )
-        console.log(wrapper.props.title)
-        // expect(wrapper.props().data).toBe('something');
-    })  
 });
