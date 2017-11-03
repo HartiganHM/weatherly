@@ -1,6 +1,14 @@
+.Search {
+  display: flex;
+}
+
 input, button {
   border: 0.02rem solid ghostwhite;
-  font-size: 2.5rem;
-  margin: auto;
-  height: 8rem;
+  font-size: 1.8rem;
+  height: 4rem;
+}
+
+input {
+  flex: 2;
+  padding-left: 1rem;
 }
