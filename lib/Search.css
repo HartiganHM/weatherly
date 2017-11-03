@@ -1,11 +1,11 @@
 .Search {
   display: flex;
+  height: 4rem;
 }
 
 input, button {
   border: 0.02rem solid ghostwhite;
   font-size: 1.8rem;
-  height: 4rem;
 }
 
 input {
