@@ -11,6 +11,16 @@ const mockData = {
 }
 
 describe('Card Tests', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<Card />)
+  })
+
+  it('Card should exist', () => {
+    expect(wrapper).toBeDefined()
+  })
+
   it('Should have a className card', () => {
     const card = shallow( <Card /> );
     expect( card.find('.card').length ).toEqual(1);
