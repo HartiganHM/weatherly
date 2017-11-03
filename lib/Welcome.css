@@ -1,7 +1,7 @@
 .Welcome {
-  border: 2px solid black;
-  padding: 20px;
+  border: 0.2rem solid ghostwhite;
+  padding: 2rem;
   margin: auto;
-  padding-top: 100px;
-  height: 500px;
+  padding-top: 10rem;
+  height: 50rem;
 }
