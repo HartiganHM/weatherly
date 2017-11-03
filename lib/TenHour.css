@@ -2,7 +2,7 @@
 	color: #FFF;
   display: flex;
   justify-content: space-between;
-  border: 2px solid ghostwhite;
+  border: 0.02rem solid ghostwhite;
   padding: 10px;
   margin: auto;
 }
@@ -10,10 +10,10 @@
 .time,
 .condition,
 .temp {
-	padding: 35px;
+	padding: 3.5rem;
 }
 
 .spacer {
-	margin: auto 20px;
-	font-size: 25px;
+	margin: auto 2rem;
+	font-size: 2.5rem;
 }
