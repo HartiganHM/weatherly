@@ -10,7 +10,7 @@ describe('Search', () => {
 
     const mockEvent = {
       target: {
-        value: 'Solar'
+        value: 'Denver'
       }
     }
 
