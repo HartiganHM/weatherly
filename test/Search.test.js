@@ -21,4 +21,13 @@ describe('Search', () => {
     expect( search.state('inputVal') ).toEqual('Solar')
 
   })
+
+  it('search should exist', () => {
+    expect(<search />).toBeDefined()
+  })
+
+  it('Should have a className search', () => {
+      const search = shallow(<div className='search'></div>);
+      expect( search.find('.search').length ).toEqual(1);
+  })
 });
