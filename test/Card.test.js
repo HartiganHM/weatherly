@@ -4,7 +4,7 @@ import Card from '../lib/Card';
 
 const mockData = {
   time: '5:00 PM',
-  src: 'http://icons.wxug.com/i/c/k/partlycloudy.gif',
+  icon: 'http://icons.wxug.com/i/c/k/partlycloudy.gif',
   temp: '72°F',
   high: '212°F',
   low: '−459.67°F'
@@ -19,6 +19,10 @@ describe('Card Tests', () => {
 
   it('Card should exist', () => {
     expect(wrapper).toBeDefined()
+  })
+
+  it('Card should be an object', () => {
+    expect(typeof(wrapper)).toEqual('object')
   })
 
   it('Should have a className card', () => {
@@ -43,5 +47,11 @@ describe('Card Tests', () => {
     expect( card.find('.temp').length ).toEqual(1);      
     expect("212°F").toEqual(mockData.high);
     expect("−459.67°F").toEqual(mockData.low);
+  })
+
+  it('Should have a configurable src img', () => {
+    const card = shallow( <Card temp={mockData.icon} />);
+    expect( card.find('img').length ).toEqual(1);
+    expect('http://icons.wxug.com/i/c/k/partlycloudy.gif').toEqual(mockData.icon);
   })
 })
