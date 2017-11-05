@@ -5,20 +5,16 @@ import Search from '../lib/Search';
 
 describe('Search', () => {
   it('changing input should change state', () => {
-    const search = shallow(<Search filterFunction={ ()=>{} }/>)
+    const search = mount(<Search />)
     const input = search.find('input');
 
-    const mockEvent = {
-      target: {
-        value: 'Denver'
-      }
-    }
+    expect( search.state('value') ).toEqual('')
 
-    expect( search.state('inputVal') ).toEqual('')
+    const value = { target: { value: 'Denver' } }
 
-    input.simulate('change', mockEvent);
+    input.simulate('change', value);
 
-    expect( search.state('inputVal') ).toEqual('Solar')
+    expect( search.state('value') ).toEqual('Denver')
 
   })
 
