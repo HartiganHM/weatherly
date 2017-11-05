@@ -4,7 +4,7 @@ import Card from '../lib/Card';
 
 const mockData = {
   time: '5:00 PM',
-  condition: 'Sunny',
+  src: 'http://icons.wxug.com/i/c/k/partlycloudy.gif',
   temp: '72°F',
   high: '212°F',
   low: '−459.67°F'
@@ -31,13 +31,7 @@ describe('Card Tests', () => {
     expect( card.find('.time').length ).toEqual(1);
     expect('5:00 PM').toEqual(mockData.time);
   })
-
-  it('Should have a configurable condition div', () => {
-    const card = shallow( <Card condition={mockData.condition} />);
-    expect( card.find('.condition').length ).toEqual(1);
-    expect( card.find('.condition').text() ).toEqual('Sunny');
-  })
-
+  
   it('Should have a configurable temp div', () => {
     const card = shallow( <Card temp={mockData.temp} />);
     expect( card.find('.temp').length ).toEqual(1);
