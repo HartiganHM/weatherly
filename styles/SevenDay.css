@@ -2,7 +2,6 @@
 	color: #FFF;
   display: flex;
   justify-content: space-between;
-  border: 0.02rem solid ghostwhite;
   padding: 2rem;
   margin: auto;
 }
