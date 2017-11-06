@@ -5,6 +5,7 @@ body {
 }
 
 html {
+  background-image: radial-gradient(farthest-corner at 2rem 2rem, #42AAf4 0%, #0A2963 100%);
   font-size: 62.5%;
   height: 100%;
 }
