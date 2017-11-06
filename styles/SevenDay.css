@@ -1,0 +1,14 @@
+.SevenDay {
+	color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: auto;
+}
+
+.day,
+.condition,
+.highLow,
+.spacer {
+	display: inline-flex;
+}

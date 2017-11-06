@@ -1,0 +1,12 @@
+.Welcome {
+  color: ghostwhite;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 10rem;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 7.2rem;
+  text-align: center;
+}
