@@ -7,12 +7,12 @@
   background-color: rgb(37, 39, 53);
   color: #FFF;
   padding: 1.5rem;
-  width: 100vw;
+  width: 100%;
   z-index: 5;
 }
 
-  .citySuggestion:hover {
-    background-color: rgb(67, 70, 94);
+.citySuggestion:hover {
+  background-color: rgb(67, 70, 94);
 }
 
 .Inputs {
@@ -22,10 +22,16 @@
 
 .citySuggestion, .searchField, .searchButton {
   border: 0.02rem solid ghostwhite;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.searchButton {
+  border-radius: 0 2rem 2rem 0;
 }
 
 .searchField {
+  border-radius: 2rem 0 0 2rem;
   flex: 2;
   padding-left: 1rem;
 }
@@ -36,5 +42,6 @@
   height: 0;
   list-style: none;
   margin: auto;
+  margin-bottom: 2rem;
   padding: 0;
 }
