@@ -1,6 +1,8 @@
 .App {
   background-image: radial-gradient(farthest-corner at 2rem 2rem, #42AAf4 0%, #0A2963 100%);
-  text-align: center;
-  margin: auto;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
 }
