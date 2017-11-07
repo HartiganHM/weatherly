@@ -1,6 +1,7 @@
 .SevenDay {
 	color: #FFF;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -17,4 +18,10 @@
   font-size: 1.8rem;
   padding: 1rem 0 1rem 1rem;
   text-align: left;
+}
+
+@media screen and (max-width: 1010px) {
+	.SevenDay {
+    justify-content: center;
+	}
 }
