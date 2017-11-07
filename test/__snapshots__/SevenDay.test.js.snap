@@ -2,8 +2,6 @@
 
 exports[`SevenDay Should have a className SevenDay 1`] = `[Function]`;
 
-exports[`SevenDay Should take in sevenDayData with a starting length of 10 1`] = `[Function]`;
-
 exports[`SevenDay cleanData should map over sevenDayData 1`] = `[Function]`;
 
-exports[`SevenDay sevenDayData should get reassigned to cleanData and ends with a length of 7 1`] = `[Function]`;
+exports[`SevenDay sevenDayData should create 7 cards 1`] = `[Function]`;
