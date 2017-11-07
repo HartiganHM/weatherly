@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Tests Should have a className card 1`] = `[Function]`;
+
+exports[`Card Tests Should have a configurable src img 1`] = `[Function]`;
+
+exports[`Card Tests Should have a configurable temp div 1`] = `[Function]`;
+
+exports[`Card Tests Should have a configurable temp div with high and low 1`] = `[Function]`;
+
+exports[`Card Tests Should have a configurable time div 1`] = `[Function]`;

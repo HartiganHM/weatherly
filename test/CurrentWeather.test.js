@@ -17,6 +17,8 @@ const mockData = {
 
 
 describe("CurrentWeather", () => {
+  let data = mockData;
+
   it("CurrentWeather should exist", () => {
     expect(<CurrentWeather />).toBeDefined();
   });
@@ -28,6 +30,7 @@ describe("CurrentWeather", () => {
   it("Should have a className CurrentWeather", () => {
     const currentWeather = shallow(<div className="CurrentWeather" />);
     expect(currentWeather.find(".CurrentWeather").length).toEqual(1);
+    expect(currentWeather).toMatchSnapshot();    
   });
 
   it("Should have a configurable city", () => {    
@@ -40,6 +43,7 @@ describe("CurrentWeather", () => {
       <CurrentWeather data={mockData} />
     );
     expect("Sunny").toEqual(mockData.condition);
+    expect(currentWeather).toMatchSnapshot();    
   });
 
   it("Should have a configurable day and date", () => {
@@ -48,17 +52,20 @@ describe("CurrentWeather", () => {
     );
     expect("Friday").toEqual(mockData.day);
     expect("November 3, 2017").toEqual(mockData.date);
+    expect(currentWeather).toMatchSnapshot();    
   });
 
   it("Should have a configurable tempF", () => {
     const currentWeather = shallow(<CurrentWeather data={mockData} />);
     expect(currentWeather.find(".current-temp").length).toEqual(1);
     expect("32").toEqual(mockData.tempF);
+    expect(currentWeather).toMatchSnapshot();    
   });
 
   it("Should have a configurable tempC", () => {
     const currentWeather = shallow(<CurrentWeather data={mockData} />);
     expect("0").toEqual(mockData.tempC);
+    expect(currentWeather).toMatchSnapshot();    
   });
 
   it("Should have a configurable temp with tempHi and tempLo", () => {
@@ -68,11 +75,13 @@ describe("CurrentWeather", () => {
     expect(currentWeather.find(".hi-lo").length).toEqual(2);
     expect("212°F").toEqual(mockData.tempHi);
     expect("−459.67°F").toEqual(mockData.tempLo);
+    expect(currentWeather).toMatchSnapshot();    
   });
 
   it("Should have a configurable src img", () => {
     const currentWeather = shallow(<CurrentWeather data={mockData} />);
     expect(currentWeather.find(".weather-icon").length).toEqual(1);
     expect("http://icons.wxug.com/i/c/k/sunny.gif").toEqual(mockData.icon);
+    expect(currentWeather).toMatchSnapshot();    
   });
 });
