@@ -26,6 +26,10 @@
   background-color: rgb(67, 70, 94);
 }
 
+.highlight {
+  background-color: rgb(67, 70, 94);
+}
+
 .Inputs {
   display: flex;
   height: 4rem;

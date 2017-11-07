@@ -58,6 +58,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "@hartiganhm/linked-list": "git+https://github.com/HartiganHM/linked-list-trie.git"
+    "@hartiganhm/linked-list": "git+https://github.com/HartiganHM/linked-list-trie.git",
+    "prop-types": "^15.6.0"
   }
 }
