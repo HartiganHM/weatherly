@@ -47,5 +47,24 @@
 }
 
 .weather-icon {
-  width: 15rem;
+	width: 15rem;
+}
+
+@media screen and (max-width: 815px) {
+	.CurrentWeather {
+		border: none;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	.currentHeader {
+		text-align: center;
+	}
+
+	.weather-box {
+		border: 0.02rem solid ghostwhite;
+		margin: 1rem;
+		padding: 2rem;
+	}
 }
