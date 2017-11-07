@@ -5,7 +5,7 @@
 }
 
 .branding {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: ghostwhite;
   font-size: 2.4rem;
   flex: 2;
@@ -16,7 +16,7 @@
 
 .citySuggestion {
   background-color: rgb(37, 39, 53);
-  color: #FFF;
+  color: #fff;
   padding: 1.5rem;
   width: 50%;
   z-index: 5;
@@ -26,12 +26,18 @@
   background-color: rgb(67, 70, 94);
 }
 
+.highlight {
+  background-color: rgb(67, 70, 94);
+}
+
 .Inputs {
   display: flex;
   height: 4rem;
 }
 
-.citySuggestion, .searchField, .searchButton {
+.citySuggestion,
+.searchField,
+.searchButton {
   border: 0.02rem solid ghostwhite;
   font-size: 1.4rem;
   outline: none;
@@ -54,4 +60,32 @@
   list-style: none;
   margin-bottom: 2rem;
   padding: 0;
+}
+
+@media screen and (max-width: 815px) {
+  .branding {
+    flex: 0;
+    order: -1;
+  }
+  .citySuggestion {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .branding {
+    font-size: 6.4rem;
+    padding: 0;
+    text-align: center;
+  }
+  .Inputs {
+    flex-direction: column;
+    height: auto;
+  }
+  .searchButton,
+  .searchField {
+    border-radius: 2rem;
+    height: 4rem;
+    margin-top: 4rem;
+  }
 }

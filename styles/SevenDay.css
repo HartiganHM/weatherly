@@ -1,6 +1,7 @@
 .SevenDay {
-	color: #FFF;
+  color: #fff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -8,13 +9,25 @@
 .condition,
 .highLow,
 .spacer {
-	display: inline-flex;
+  display: inline-flex;
 }
 
 .sevenDayHeader {
-  color: #FFF;
-  font-family: 'Open Sans';
+  color: #fff;
+  font-family: "Open Sans";
   font-size: 1.8rem;
   padding: 1rem 0 1rem 1rem;
   text-align: left;
+}
+
+@media screen and (max-width: 1010px) {
+	.SevenDay {
+    justify-content: center;
+	}
+}
+
+@media screen and (max-width: 815px) {
+  .sevenDayHeader {
+    text-align: center;
+  }
 }

@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentWeather Should have a configurable city 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <h3
+        className="currentHeader"
+    >
+        Current Forecast
+    </h3>
+    <div
+        className="CurrentWeather"
+    >
+        <div
+            className="weather-box"
+        >
+            <h3
+                className="city"
+            >
+                Denver
+            </h3>
+            <img
+                className="weather-icon"
+                src="http://icons.wxug.com/i/c/k/sunny.gif"
+            />
+            <h4
+                className="subHeader"
+            >
+                Sunny
+            </h4>
+        </div>
+        <div
+            className="weather-box"
+        >
+            <h3>
+                Friday
+            </h3>
+            <h3>
+                November 3, 2017
+            </h3>
+            <h2
+                className="current-temp"
+            >
+                32
+                °F
+            </h2>
+            <h4
+                className="subHeader"
+            >
+                0
+                °C
+            </h4>
+        </div>
+        <div
+            className="weather-box"
+        >
+            <div
+                className="hi-lo"
+            >
+                <h3>
+                    Hi | Lo
+                </h3>
+            </div>
+            <div
+                className="hi-lo"
+            >
+                <h2
+                    className="rangeTemp"
+                >
+                    212°F
+                    °
+                </h2>
+                <span
+                    className="spacer"
+                >
+                    /
+                </span>
+                <h2
+                    className="rangeTemp"
+                >
+                    −459.67°F
+                    °
+                </h2>
+            </div>
+            <h4
+                className="subHeader"
+            >
+                Sunny
+            </h4>
+        </div>
+    </div>
+</div>,
+  "nodes": Array [
+    <div>
+      <h3
+            className="currentHeader"
+      >
+            Current Forecast
+      </h3>
+      <div
+            className="CurrentWeather"
+      >
+            <div
+                  className="weather-box"
+            >
+                  <h3
+                        className="city"
+                  >
+                        Denver
+                  </h3>
+                  <img
+                        className="weather-icon"
+                        src="http://icons.wxug.com/i/c/k/sunny.gif"
+                  />
+                  <h4
+                        className="subHeader"
+                  >
+                        Sunny
+                  </h4>
+            </div>
+            <div
+                  className="weather-box"
+            >
+                  <h3>
+                        Friday
+                  </h3>
+                  <h3>
+                        November 3, 2017
+                  </h3>
+                  <h2
+                        className="current-temp"
+                  >
+                        32
+                        °F
+                  </h2>
+                  <h4
+                        className="subHeader"
+                  >
+                        0
+                        °C
+                  </h4>
+            </div>
+            <div
+                  className="weather-box"
+            >
+                  <div
+                        className="hi-lo"
+                  >
+                        <h3>
+                              Hi | Lo
+                        </h3>
+                  </div>
+                  <div
+                        className="hi-lo"
+                  >
+                        <h2
+                              className="rangeTemp"
+                        >
+                              212°F
+                              °
+                        </h2>
+                        <span
+                              className="spacer"
+                        >
+                              /
+                        </span>
+                        <h2
+                              className="rangeTemp"
+                        >
+                              −459.67°F
+                              °
+                        </h2>
+                  </div>
+                  <h4
+                        className="subHeader"
+                  >
+                        Sunny
+                  </h4>
+            </div>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <CurrentWeather
+        data={
+                Object {
+                        "city": "Denver",
+                        "condition": "Sunny",
+                        "date": "November 3, 2017",
+                        "day": "Friday",
+                        "icon": "http://icons.wxug.com/i/c/k/sunny.gif",
+                        "summary": "Sunny",
+                        "tempC": "0",
+                        "tempF": "32",
+                        "tempHi": "212°F",
+                        "tempLo": "−459.67°F",
+                      }
+        }
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "data": Object {
+            "city": "Denver",
+            "condition": "Sunny",
+            "date": "November 3, 2017",
+            "day": "Friday",
+            "icon": "http://icons.wxug.com/i/c/k/sunny.gif",
+            "summary": "Sunny",
+            "tempC": "0",
+            "tempF": "32",
+            "tempHi": "212°F",
+            "tempLo": "−459.67°F",
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <h3
+                    className="currentHeader"
+          >
+                    Current Forecast
+          </h3>
+          <div
+                    className="CurrentWeather"
+          >
+                    <div
+                              className="weather-box"
+                    >
+                              <h3
+                                        className="city"
+                              >
+                                        Denver
+                              </h3>
+                              <img
+                                        className="weather-icon"
+                                        src="http://icons.wxug.com/i/c/k/sunny.gif"
+                              />
+                              <h4
+                                        className="subHeader"
+                              >
+                                        Sunny
+                              </h4>
+                    </div>
+                    <div
+                              className="weather-box"
+                    >
+                              <h3>
+                                        Friday
+                              </h3>
+                              <h3>
+                                        November 3, 2017
+                              </h3>
+                              <h2
+                                        className="current-temp"
+                              >
+                                        32
+                                        °F
+                              </h2>
+                              <h4
+                                        className="subHeader"
+                              >
+                                        0
+                                        °C
+                              </h4>
+                    </div>
+                    <div
+                              className="weather-box"
+                    >
+                              <div
+                                        className="hi-lo"
+                              >
+                                        <h3>
+                                                  Hi | Lo
+                                        </h3>
+                              </div>
+                              <div
+                                        className="hi-lo"
+                              >
+                                        <h2
+                                                  className="rangeTemp"
+                                        >
+                                                  212°F
+                                                  °
+                                        </h2>
+                                        <span
+                                                  className="spacer"
+                                        >
+                                                  /
+                                        </span>
+                                        <h2
+                                                  className="rangeTemp"
+                                        >
+                                                  −459.67°F
+                                                  °
+                                        </h2>
+                              </div>
+                              <h4
+                                        className="subHeader"
+                              >
+                                        Sunny
+                              </h4>
+                    </div>
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div>
+          <h3
+                    className="currentHeader"
+          >
+                    Current Forecast
+          </h3>
+          <div
+                    className="CurrentWeather"
+          >
+                    <div
+                              className="weather-box"
+                    >
+                              <h3
+                                        className="city"
+                              >
+                                        Denver
+                              </h3>
+                              <img
+                                        className="weather-icon"
+                                        src="http://icons.wxug.com/i/c/k/sunny.gif"
+                              />
+                              <h4
+                                        className="subHeader"
+                              >
+                                        Sunny
+                              </h4>
+                    </div>
+                    <div
+                              className="weather-box"
+                    >
+                              <h3>
+                                        Friday
+                              </h3>
+                              <h3>
+                                        November 3, 2017
+                              </h3>
+                              <h2
+                                        className="current-temp"
+                              >
+                                        32
+                                        °F
+                              </h2>
+                              <h4
+                                        className="subHeader"
+                              >
+                                        0
+                                        °C
+                              </h4>
+                    </div>
+                    <div
+                              className="weather-box"
+                    >
+                              <div
+                                        className="hi-lo"
+                              >
+                                        <h3>
+                                                  Hi | Lo
+                                        </h3>
+                              </div>
+                              <div
+                                        className="hi-lo"
+                              >
+                                        <h2
+                                                  className="rangeTemp"
+                                        >
+                                                  212°F
+                                                  °
+                                        </h2>
+                                        <span
+                                                  className="spacer"
+                                        >
+                                                  /
+                                        </span>
+                                        <h2
+                                                  className="rangeTemp"
+                                        >
+                                                  −459.67°F
+                                                  °
+                                        </h2>
+                              </div>
+                              <h4
+                                        className="subHeader"
+                              >
+                                        Sunny
+                              </h4>
+                    </div>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <CurrentWeather
+    data={
+        Object {
+            "city": "Denver",
+            "condition": "Sunny",
+            "date": "November 3, 2017",
+            "day": "Friday",
+            "icon": "http://icons.wxug.com/i/c/k/sunny.gif",
+            "summary": "Sunny",
+            "tempC": "0",
+            "tempF": "32",
+            "tempHi": "212°F",
+            "tempLo": "−459.67°F",
+          }
+    }
+/>,
+}
+`;

@@ -5,15 +5,19 @@ body {
 }
 
 html {
-  background-image: radial-gradient(farthest-corner at 2rem 2rem, #42AAf4 0%, #0A2963 100%);
+  background-image: radial-gradient(
+    farthest-corner at 2rem 2rem,
+    #42aaf4 0%,
+    #0a2963 100%
+  );
   font-size: 62.5%;
   height: 100%;
 }
 
 h2 {
-	font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-	margin: 0;
+  margin: 0;
 }

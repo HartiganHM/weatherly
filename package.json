@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack.js",
-    "test": "jest"
+    "test": "jest",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.24.1",
-    "babel-eslint": "^6.0.4",
+    "babel-eslint": "^6.1.2",
     "babel-jest": "^20.0.3",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.7.4",
@@ -58,6 +59,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "@hartiganhm/linked-list": "git+https://github.com/HartiganHM/linked-list-trie.git"
+    "@hartiganhm/linked-list": "git+https://github.com/HartiganHM/linked-list-trie.git",
+    "prop-types": "^15.6.0"
   }
 }
