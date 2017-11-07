@@ -26,3 +26,5 @@ describe("Search", () => {
     expect(Search).toMatchSnapshot();
   });
 });
+
+// do a simulate change check state returns to '' 

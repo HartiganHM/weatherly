@@ -70,9 +70,11 @@ const mockSevenDayData = {
 
 let wrapper = <Card />;
 
+//
+
 describe("SevenDay", () => {
   it("Should have a className SevenDay", () => {
-    const sevenDay = shallow(<div className="SevenDay" />);
+    const sevenDay = shallow(<SevenDay data={mockSevenDayData}/>);
     expect(sevenDay.find(".SevenDay").length).toEqual(1);
     expect(SevenDay).toMatchSnapshot();
   });

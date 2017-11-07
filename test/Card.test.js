@@ -32,9 +32,9 @@ describe("Card Tests", () => {
   });
 
   it("Should have a configurable time div", () => {
-    const card = shallow(<Card time={mockData.time} />);
+    const card = shallow(<Card title={mockData.time} />);
     expect(card.find(".time").length).toEqual(1);
-    expect("5:00 PM").toEqual(mockData.time);
+    expect(card.find(".time").text()).toEqual(mockData.time);
     expect(Card).toMatchSnapshot();    
   });
 
@@ -48,7 +48,7 @@ describe("Card Tests", () => {
   it("Should have a configurable temp div with high and low", () => {
     const card = shallow(<Card high={mockData.high} low={mockData.low} />);
     expect(card.find(".temp").length).toEqual(1);
-    expect("212°F").toEqual(mockData.high);
+    expect(card.find(".temp").text()).toEqual(mockData.high);
     expect("−459.67°F").toEqual(mockData.low);
     expect(Card).toMatchSnapshot();
   });

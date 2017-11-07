@@ -187,8 +187,8 @@ const mockTenHourData = [
 
 describe("TenHour", () => {
   it("Should have a className TenHour", () => {
-    const tenHour = shallow(<div className="TenHour" />);
-    expect(tenHour.find(".TenHour").length).toEqual(1);
+    const tenHour = shallow(<TenHour data={mockTenHourData}/>);
+    expect(tenHour.find(".Card").length).toEqual(1);
     expect(TenHour).toMatchSnapshot();
   });
 
