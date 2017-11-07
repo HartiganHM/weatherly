@@ -67,7 +67,6 @@
     flex: 0;
     order: -1;
   }
-
   .citySuggestion {
     width: auto;
   }
@@ -83,8 +82,8 @@
     flex-direction: column;
     height: auto;
   }
-
-  .searchButton, .searchField {
+  .searchButton,
+  .searchField {
     border-radius: 2rem;
     height: 4rem;
     margin-top: 4rem;

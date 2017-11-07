@@ -92,7 +92,6 @@ describe("SevenDay", () => {
         <Card title={obj.day} icon={obj.icon} high={obj.high} low={obj.low} />
       );
     });
-    console.log(wrapper.props.title);
     // expect(wrapper.props().data).toBe('something');
   });
 });
