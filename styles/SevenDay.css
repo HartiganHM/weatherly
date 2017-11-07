@@ -2,8 +2,6 @@
 	color: #FFF;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
-  margin: auto;
 }
 
 .day,
@@ -11,4 +9,12 @@
 .highLow,
 .spacer {
 	display: inline-flex;
+}
+
+.sevenDayHeader {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 1.8rem;
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
 }
