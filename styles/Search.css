@@ -5,7 +5,7 @@
 }
 
 .branding {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: ghostwhite;
   font-size: 2.4rem;
   flex: 2;
@@ -16,7 +16,7 @@
 
 .citySuggestion {
   background-color: rgb(37, 39, 53);
-  color: #FFF;
+  color: #fff;
   padding: 1.5rem;
   width: 50%;
   z-index: 5;
@@ -35,7 +35,9 @@
   height: 4rem;
 }
 
-.citySuggestion, .searchField, .searchButton {
+.citySuggestion,
+.searchField,
+.searchButton {
   border: 0.02rem solid ghostwhite;
   font-size: 1.4rem;
   outline: none;
