@@ -30,3 +30,6 @@ node_modules
 # DS_Store
 .DS_Store
 lib/.DS_Store
+
+#API Key
+lib/key.js
