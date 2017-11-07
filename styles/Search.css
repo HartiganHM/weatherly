@@ -59,3 +59,32 @@
   margin-bottom: 2rem;
   padding: 0;
 }
+
+@media screen and (max-width: 815px) {
+  .branding {
+    flex: 0;
+    order: -1;
+  }
+
+  .citySuggestion {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .branding {
+    font-size: 6.4rem;
+    padding: 0;
+    text-align: center;
+  }
+  .Inputs {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .searchButton, .searchField {
+    border-radius: 2rem;
+    height: 4rem;
+    margin-top: 4rem;
+  }
+}
