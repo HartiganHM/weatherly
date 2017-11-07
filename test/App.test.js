@@ -1,6 +1,10 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import App from "../lib/App";
+import cleanData from "../lib/cleanData";
+import denverData from "../lib/denverData";
+
+
 
 global.localStorage = {
   getItem(keyword) {
@@ -35,9 +39,8 @@ describe("App", () => {
   });
 
   it("should render the weather page when a city is specified", () => {
-    app.setState();
+    app.setState(cleanData(denverData))
 
-    app.setState({ currentWeatherData, tenHourData, sevenDayData });
     expect(app.find("Search")).toBeDefined();
     expect(app.find("Search").length).toEqual(1);
 
