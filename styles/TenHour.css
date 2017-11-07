@@ -2,17 +2,17 @@
 	color: #FFF;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  margin: auto;
-}
-
-.time,
-.condition,
-.temp {
-	padding: 1rem;
 }
 
 .spacer {
 	margin: auto 2rem;
 	font-size: 1.8rem;
+}
+
+.tenHourHeader {
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 1.8rem;
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
 }

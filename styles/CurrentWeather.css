@@ -4,30 +4,34 @@
 	justify-content: space-between;
 	border: 0.02rem solid ghostwhite;
 	padding: 2rem;
-	margin: auto;
+	margin: 1rem;
 }
+
+.currentHeader {
+	color: #FFF;
+	font-family: 'Open Sans';
+	font-size: 1.8rem;
+	padding: 0 0 1rem 1rem;
+	text-align: left;
+  }
 
 .current-temp {
 	font-size: 6rem;
 }
 
-.condition {
-	font-size: 1.2rem;
-	margin: 0;
-	padding: 0;
-}
-
-h2 {
-	font-size: 1.8rem;
-}
-
-h3 {
-	margin: 0;
-}
-
 .hi-lo {
 	align-items: center;
 	display: flex;
+}
+
+.rangeTemp {
+	font-size: 3.2rem;
+}
+
+.subHeader {
+	font-size: 1.2rem;
+	margin: 0;
+	padding: 0;
 }
 
 .spacer {
