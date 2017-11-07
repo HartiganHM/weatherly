@@ -41,22 +41,22 @@ describe("Card Tests", () => {
   it("Should have a configurable temp div", () => {
     const card = shallow(<Card temp={mockData.temp} />);
     expect(card.find(".temp").length).toEqual(1);
-    expect("72°F").toEqual(mockData.temp);
+    expect(card.find(".temp").text()).toEqual(mockData.temp);
     expect(Card).toMatchSnapshot();    
   });
 
   it("Should have a configurable temp div with high and low", () => {
     const card = shallow(<Card high={mockData.high} low={mockData.low} />);
     expect(card.find(".temp").length).toEqual(1);
-    expect(card.find(".temp").text()).toEqual(mockData.high);
-    expect("−459.67°F").toEqual(mockData.low);
+    expect(card.find(".temp").text()).toEqual(mockData.high + " / " + mockData.low);
     expect(Card).toMatchSnapshot();
   });
 
   it("Should have a configurable src img", () => {
-    const card = shallow(<Card temp={mockData.icon} />);
+    const card = shallow(<Card icon={mockData.icon} />);
+    console.log(card.debug())
     expect(card.find("img").length).toEqual(1);
-    expect("http://icons.wxug.com/i/c/k/partlycloudy.gif").toEqual(
+    expect(card.find("img").prop("src")).toEqual(
       mockData.icon
     );
     expect(Card).toMatchSnapshot();

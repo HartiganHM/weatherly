@@ -16,6 +16,20 @@ describe("Search", () => {
     expect(search.state("value")).toEqual("Denver, CO");
   });
 
+  it("Clicking submit should clear value", () => {
+    const search = mount(<Search />);
+    const input = search.find("input");
+
+    expect(search.state("value")).toEqual("");
+
+    const value = { target: { value: "Denver, CO" } };
+
+    input.simulate("click", value);
+
+    expect(search.state("value")).toEqual("");
+
+  });
+
   it("search should exist", () => {
     expect(<search />).toBeDefined();
   });
