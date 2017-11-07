@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TenHour Should have a className TenHour 1`] = `[Function]`;
+
+exports[`TenHour Should take in tenHourData with a starting length of 10 1`] = `[Function]`;
+
+exports[`TenHour tenHourData should get reassigned to cleanData and ends with a length of 10 1`] = `[Function]`;

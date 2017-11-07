@@ -32,6 +32,7 @@ describe("App", () => {
   it("App should mount <Welcome />", () => {
     expect(app.find("Welcome")).toBeDefined();
     expect(app.find("Welcome").length).toEqual(1);
+    expect(App).toMatchSnapshot();
   });
 
   it("should be a function", () => {
@@ -52,5 +53,7 @@ describe("App", () => {
 
     expect(app.find("SevenDay")).toBeDefined();
     expect(app.find("SevenDay").length).toEqual(1);
+
+    expect(App).toMatchSnapshot();    
   });
 });

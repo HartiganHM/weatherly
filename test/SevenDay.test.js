@@ -74,15 +74,18 @@ describe("SevenDay", () => {
   it("Should have a className SevenDay", () => {
     const sevenDay = shallow(<div className="SevenDay" />);
     expect(sevenDay.find(".SevenDay").length).toEqual(1);
+    expect(SevenDay).toMatchSnapshot();
   });
 
   it("Should take in sevenDayData with a starting length of 10", () => {
     expect(mockSevenDayData.data.length).toEqual(10);
+    expect(SevenDay).toMatchSnapshot();
   });
 
   it("sevenDayData should get reassigned to cleanData and ends with a length of 7", () => {
     let cleanData = mockSevenDayData.data.slice(0, 7);
     expect(cleanData.length).toEqual(7);
+    expect(SevenDay).toMatchSnapshot();
   });
 
   it("cleanData should map over sevenDayData", () => {
@@ -92,6 +95,6 @@ describe("SevenDay", () => {
         <Card title={obj.day} icon={obj.icon} high={obj.high} low={obj.low} />
       );
     });
-    // expect(wrapper.props().data).toBe('something');
+    expect(SevenDay).toMatchSnapshot();
   });
 });

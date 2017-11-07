@@ -23,5 +23,6 @@ describe("Search", () => {
   it("Should have a className search", () => {
     const search = shallow(<div className="search" />);
     expect(search.find(".search").length).toEqual(1);
+    expect(Search).toMatchSnapshot();
   });
 });

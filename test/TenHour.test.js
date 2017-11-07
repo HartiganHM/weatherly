@@ -189,14 +189,17 @@ describe("TenHour", () => {
   it("Should have a className TenHour", () => {
     const tenHour = shallow(<div className="TenHour" />);
     expect(tenHour.find(".TenHour").length).toEqual(1);
+    expect(TenHour).toMatchSnapshot();
   });
 
   it("Should take in tenHourData with a starting length of 10", () => {
     expect(mockTenHourData.length).toEqual(36);
+    expect(TenHour).toMatchSnapshot();
   });
 
   it("tenHourData should get reassigned to cleanData and ends with a length of 10", () => {
     let cleanData = mockTenHourData.slice(0, 10);
     expect(cleanData.length).toEqual(10);
+    expect(TenHour).toMatchSnapshot();
   });
 });
