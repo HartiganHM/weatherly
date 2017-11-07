@@ -28,18 +28,21 @@ describe("Card Tests", () => {
   it("Should have a className card", () => {
     const card = shallow(<Card />);
     expect(card.find(".card").length).toEqual(1);
+    expect(Card).toMatchSnapshot();    
   });
 
   it("Should have a configurable time div", () => {
     const card = shallow(<Card time={mockData.time} />);
     expect(card.find(".time").length).toEqual(1);
     expect("5:00 PM").toEqual(mockData.time);
+    expect(Card).toMatchSnapshot();    
   });
 
   it("Should have a configurable temp div", () => {
     const card = shallow(<Card temp={mockData.temp} />);
     expect(card.find(".temp").length).toEqual(1);
     expect("72°F").toEqual(mockData.temp);
+    expect(Card).toMatchSnapshot();    
   });
 
   it("Should have a configurable temp div with high and low", () => {
@@ -47,6 +50,7 @@ describe("Card Tests", () => {
     expect(card.find(".temp").length).toEqual(1);
     expect("212°F").toEqual(mockData.high);
     expect("−459.67°F").toEqual(mockData.low);
+    expect(Card).toMatchSnapshot();
   });
 
   it("Should have a configurable src img", () => {
@@ -55,5 +59,6 @@ describe("Card Tests", () => {
     expect("http://icons.wxug.com/i/c/k/partlycloudy.gif").toEqual(
       mockData.icon
     );
+    expect(Card).toMatchSnapshot();
   });
 });

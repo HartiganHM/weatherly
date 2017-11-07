@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App App should mount <Welcome /> 1`] = `[Function]`;
+
+exports[`App should render the weather page when a city is specified 1`] = `[Function]`;

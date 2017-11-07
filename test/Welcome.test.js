@@ -10,5 +10,6 @@ describe("Welcome", () => {
   it("Should have a className Welcome", () => {
     const welcome = shallow(<div className="Welcome" />);
     expect(welcome.find(".Welcome").length).toEqual(1);
+    expect(Welcome).toMatchSnapshot();
   });
 });
