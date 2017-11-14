@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack.js",
+    "build": "webpack",
     "test": "jest",
     "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js"
   },
@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "@hartiganhm/linked-list": "git+https://github.com/HartiganHM/linked-list-trie.git",
+    "build": "^0.1.4",
     "prop-types": "^15.6.0"
   }
 }
