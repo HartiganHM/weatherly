@@ -30791,7 +30791,7 @@
 	      this.testInput(location);
 	      fetch(
 	      //eslint-disable-next-line max-len
-	      "http://api.wunderground.com/api/" + _key2.default + "/forecast10day/hourly/conditions/q/" + location + ".json").then(function (response) {
+	      "https://api.wunderground.com/api/" + _key2.default + "/forecast10day/hourly/conditions/q/" + location + ".json").then(function (response) {
 	        return response.json();
 	      }).then(function (data) {
 	        return (0, _cleanData2.default)(data);
